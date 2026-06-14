@@ -26,10 +26,10 @@ fi
 scp pi@$raspberry_pi_ip:./Desktop/datalogs/datalog_trial_0.csv . &&
 
 # Step2: move the file to the aq_explore folder - can probably skip this step but it is fun
-mv datalog_trial_0.csv ./python/aq_explore
+mv datalog_trial_0.csv ~/python/aq_explore/data
 
 # Step3: open up code. to run the jupyter notebook to analyze - later make a script that runs and produces an output
-cd python/aq_explore &&
+cd ~/python/aq_explore/laptop &&
 
 # Step4 initiate venv environment and run python code to see averages
 conda run -n aq_data python aq_explore.py
