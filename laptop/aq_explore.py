@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from scipy import stats
 import numpy as np
 
-df = pd.read_csv("./datalog_trial_0.csv", header=None)
+df = pd.read_csv("../data/datalog_trial_0.csv", header=None)
 
 #DATETIME ME
 df[0] = pd.to_datetime(df[0])
